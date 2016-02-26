@@ -1,11 +1,46 @@
 #previewarea {
 	padding: 6px;
-	 border:1px solid #000;
-	 width: 30%;
+	border:1px solid black;
+	width: 50%;
 }
 
+.header{
+	margin-left: 0px;
+	text-align:left;
+	color:white;
+	background-color:#43ABA4;
+	padding: 10px 10px;
+}
 .preview {
-	 border:1px solid #999;
-	 width: 49%;
-	 float: left;
+	display:inline-block;
+	border:1px solid #999;
+	width: 49%;
+}
+body {
+	background-color: #CCE0DF;
+}
+
+p{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	list-style: none;
+	background-color: #43ABA4;
+	text-align: left;
+	color: white;
+	border-radius: 3px;
+	padding: 2px;
+	width: 50%;
+}
+* {
+	margin: 0px 0px 0px 3px;
+	font-family: "Times New Roman";
+}
+
+h2{
+	width: 100%;
+	color: #1E6E68;
+	line-height: 40px;
+}
+h4{
+	line-height: 30px;
 }

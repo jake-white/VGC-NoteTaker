@@ -1,10 +1,12 @@
+var unlikelyMegas = ["Sableye", "Blaziken", "Aerodactyl", "Scizor", "Garchomp", "Latias", "Latios"];
+var restrictedMegas = ["Rayquaza"];
 var ID_dex = {
 		//formes
-'Rotom-h' : '479-1',
-'Rotom-w' : '479-2',
-'Rotom-f' : '479-3',
-'Rotom-s' : '479-4',
-'Rotom-m' : '479-5',
+'Rotom-heat' : '479-1',
+'Rotom-wash' : '479-2',
+'Rotom-fan' : '479-3',
+'Rotom-frost' : '479-4',
+'Rotom-mow' : '479-5',
 'Giratina-o' : '487-1',
 'Tornadus-t' : '641-1',
 'Thundurus-t' : '642-1',
