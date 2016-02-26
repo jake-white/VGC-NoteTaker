@@ -178,7 +178,8 @@ function completely(container, config) {
         txtInput.value = txtHint.value = leftSide+text; 
         rs.onChange(txtInput.value); // <-- forcing it.
         registerOnTextChangeOldValue = txtInput.value; // <-- ensure that mouse down will not show the dropDown now.
-        setTimeout(function() { txtInput.focus(); },0);  // <-- I need to do this for IE 
+        setTimeout(function() { txtInput.focus(); },0);  // <-- I need to do this for IE
+        analyze();
     }
     
     wrapper.appendChild(dropDown);
@@ -260,6 +261,7 @@ function completely(container, config) {
                     break;
                 }
             }
+            token = token[0].toUpperCase() + token.substring(1);
             
             // moving the dropDown and refreshing it.
             dropDown.style.left = calculateWidthForText(leftSide)+'px';
@@ -343,7 +345,6 @@ function completely(container, config) {
                     rs.onChange(txtInput.value); // <-- forcing it.
                 }
             }
-            console.log("AUTOCOMPLETED " + txtInput.value);
             analyze();
             return; 
         }
