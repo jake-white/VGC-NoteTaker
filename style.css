@@ -1,0 +1,11 @@
+#previewarea {
+	padding: 6px;
+	 border:1px solid #000;
+	 width: 30%;
+}
+
+.preview {
+	 border:1px solid #999;
+	 width: 49%;
+	 float: left;
+}
