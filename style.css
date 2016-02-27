@@ -1,39 +1,89 @@
-#previewarea {
-	padding: 6px;
-	border:1px solid black;
-	width: 50%;
-}
-
-.header{
-	margin-left: 0px;
+header{
+	margin-left: -4px;
 	text-align:left;
 	color:white;
 	background-color:#43ABA4;
 	padding: 10px 10px;
 }
-.preview {
-	display:inline-block;
-	border:1px solid #999;
-	width: 49%;
+
+* {
+	margin: 0px 0px 0px 2px;
+	font-family: "Times New Roman";
 }
-body {
+
+#previewarea {
+	border:1px solid black;
+}
+.preview {
+	margin: 6px 6px 6px 6px;
+	display:inline-block;
+	border:1px solid black;
+	width: calc(50% - 18px);
+}
+#effect{
+	padding: 3px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #43ABA4;
+	overflow:auto; 
+}
+.tw_player, .tw_opp, .tr {
+	text-align: center;
 	background-color: #CCE0DF;
+	padding: 0px;
+	border-radius: 3px;
+	border:1px solid black;
+}
+.tw_player:hover, .tw_opp:hover, .tr:hover {
+	background-color: #43ABA4	!important;
+}
+.effectbutton{
+	width:100%;
+}
+
+#columns{
+	display: inline-block;
+}
+input[type=button] {
+	border: 1px solid #CCE0DF;
+	background-color: #43ABA4;
+	border-radius: 3px;
+}
+
+body {
+	padding 5px;
+	display: -moz-box;      /* OLD: Firefox (buggy) */
+	display: -ms-flexbox;   /* MID: IE 10 */
+	display: -webkit-flex;  /* New: Chrome 21+ */
+	display: flex;      /* NEW: Opera 12.1, Firefox 22+ */
+	flex-direction: column;
+	background-color: #CCE0DF;
+}
+.columns {
+	height: 100%;
+	display:flex;
+}
+.column-left{
+	width: 60%
+}
+.column-right{	
+	padding: 10px;
+	width: 40%
+}
+
+.note-area{
+	height: auto;
+	width: 90%
 }
 
 p{
 	margin-top: 2px;
 	margin-bottom: 2px;
-	list-style: none;
 	background-color: #43ABA4;
 	text-align: left;
-	color: white;
 	border-radius: 3px;
 	padding: 2px;
-	width: 50%;
-}
-* {
-	margin: 0px 0px 0px 3px;
-	font-family: "Times New Roman";
 }
 
 h2{

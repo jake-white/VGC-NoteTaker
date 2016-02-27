@@ -9380,33 +9380,6 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 7.0
   },
-  "Primal Groudon": {
-    "t1": "Ground",
-    "t2": "Fire",
-    "bs": {
-      "hp": 100,
-      "at": 180,
-      "df": 160,
-      "sa": 150,
-      "sd": 90,
-      "sp": 90
-    },
-    "w": 999.7,
-    "ab": "Desolate Land"
-  },
-  "Primal Kyogre": {
-    "t1": "Water",
-    "bs": {
-      "hp": 100,
-      "at": 150,
-      "df": 90,
-      "sa": 180,
-      "sd": 160,
-      "sp": 90
-    },
-    "w": 430.0,
-    "ab": "Primordial Sea"
-  },
   "Pumpkaboo-Average": {
     "t1": "Ghost",
     "t2": "Grass",

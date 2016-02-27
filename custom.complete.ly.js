@@ -3,6 +3,8 @@
  * MIT Licensing
  * Copyright (c) 2013 Lorenzo Puccetti
  * 
+ * Modified by Jake White in 2016 for Pokemon VGC usage.  Thanks Lorenzo!
+ * 
  * This Software shall be used for doing good things, not bad things.
  * 
 **/  
@@ -249,7 +251,7 @@ function completely(container, config) {
             // breaking text in leftSide and token.
             var token = text.substring(startFrom);
             if(token === '')
-                token='A';
+                token=' ';
             leftSide =  text.substring(0,startFrom);
             
             // updating the hint. 

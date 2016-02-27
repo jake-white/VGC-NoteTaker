@@ -1,25 +1,61 @@
 <!doctype HTML>
 <head>
-	<div class="header">
+	<header>
 		<a href="http://jake-white.github.io/Battlespotspecial/">Global Link Data</a> | <a href="https://github.com/jake-white/VGC-NoteTaker">GitHub Page</a> | <a href="http://nuggetbridge.com/blogs/blog/378-vgc-and-some-programming/">Blog</a></span>
-    </div>
-	<h2>Battlespot Note-Taker</h2>
+    </header>
+	<h2>Battlespot Note-Taker
+		<input type="button" value="Clear Battle" onclick="clearBattle();">
+	</h2>
 </head>
 <body>
-	<h4>Team preview</h4>
-	<div id="previewarea">
-		<div class="preview"></div>
-		<div class="preview"></div><br>
-		<div class="preview"></div>
-		<div class="preview"></div><br>
-		<div class="preview"></div>
-		<div class="preview"></div><br>
+	<div class="columns">
+		<div class="column-left">
+			<h4>Team preview</h4>
+			<input type="button" value="Big Six" onclick="auto('bigsix');">
+			<input type="button" value="Ray Ogre" onclick="auto('rayogre');">
+			<div id="previewarea">
+				<div class="preview"></div>
+				<div class="preview"></div>
+				<div class="preview"></div>
+				<div class="preview"></div>
+				<div class="preview"></div>
+				<div class="preview"></div>
+			</div>
+			<h4>Team Analysis</h4>
+			<p id="restricts">Restricted Pokemon: </p>
+			<p id="megas">Potential Mega Pokemon: </p>
+			<p id="others">Others: </p>
+			<h4>Field Effects</h4>
+			<p>Note: Tailwind lasts for 4 turns, and trick room for 5.  These numbers are including the turn they are set up.</p>
+			<div id="effect">
+				Tailwind Turn (Your Side)<br>
+				<div class="tw_player" onclick="effects('tw_player', 1);">1</div>
+				<div class="tw_player" onclick="effects('tw_player', 2);">2</div>
+				<div class="tw_player" onclick="effects('tw_player', 3);">3</div>
+				<input class="effectbutton" type="button" value="Clear" onclick="effects('tw_player', 0);">
+			</div>
+			<div id="effect">
+				Tailwind Turn (Opponent's Side)<br>
+				<div class="tw_opp" onclick="effects('tw_opp', 1);">1</div>
+				<div class="tw_opp" onclick="effects('tw_opp', 2);">2</div>
+				<div class="tw_opp" onclick="effects('tw_opp', 3);">3</div>
+				<input class="effectbutton"type="button" value="Clear" onclick="effects('tw_opp', 0);">
+			</div>
+			<br>
+			<div id="effect">
+				Trick Room Turn<br>
+				<div class="tr" onclick="effects('tr', 1);">1</div>
+				<div class="tr" onclick="effects('tr', 2);">2</div>
+				<div class="tr" onclick="effects('tr', 3);">3</div>
+				<div class="tr" onclick="effects('tr', 4);">4</div>
+				<input class="effectbutton" type="button" value="Clear" onclick="effects('tr', 0);">
+			</div>
+		</div>
+		<div class="column-right">
+			<h4>Additional Notes<h4>
+			<textarea class="note-area" rows=30></textarea>
+		</div>
 	</div>
-	<h4>Team Analysis</h4>
-	<p id="restricts">Restricted Pokemon: </p>
-	<p id="megas">Potential Mega Pokemon: </p>
-	<p id="others">Others: </p>
-	<h4>Field Effects</h4>
 </body>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
