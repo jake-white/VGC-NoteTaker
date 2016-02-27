@@ -28,14 +28,14 @@ header{
 	background-color: #43ABA4;
 	overflow:auto; 
 }
-.tw_player, .tw_opp, .tr {
+.tw_player, .tw_opp, .tr, .taunt, .encore {
 	text-align: center;
 	background-color: #CCE0DF;
 	padding: 0px;
 	border-radius: 3px;
 	border:1px solid black;
 }
-.tw_player:hover, .tw_opp:hover, .tr:hover {
+.tw_player:hover, .tw_opp:hover, .tr:hover, .taunt:hover, .encore:hover {
 	background-color: #43ABA4	!important;
 }
 .effectbutton{

@@ -81,6 +81,8 @@ var clearBattle = function(){ //clearing effects, statuses, pokemon, etc
 	effects('tw_player', 0);
 	effects('tw_opp', 0);
 	effects('tr', 0);
+	effects('taunt', 0);
+	effects('encore', 0);
 	atk = [0,0,0,0,0,0,0];
 	def = [0,0,0,0,0,0,0];
 	spatk = [0,0,0,0,0,0,0];
