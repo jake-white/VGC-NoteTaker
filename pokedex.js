@@ -7427,7 +7427,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 325.0,
     "ab": "Teravolt"
   },
-  "Kyurem-W": {
+  "Kyurem-w": {
     "t1": "Dragon",
     "t2": "Ice",
     "bs": {
