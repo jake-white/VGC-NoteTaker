@@ -31,6 +31,7 @@ $(document).ready(function(){ //called when jquery determines the page is ready
 									<option>Burned</option>
 									<option>Paralyzed</option>
 									<option>Poisoned</option>
+									<option>Sleeping</option>
 									<option>Fainted</option>
 								</select>` + previews[i].innerHTML;
 		c[i] = completely(previews[i]);
@@ -104,6 +105,7 @@ var clearBattle = function(){ //clearing effects, statuses, pokemon, etc
 									<option>Burned</option>
 									<option>Paralyzed</option>
 									<option>Poisoned</option>
+									<option>Sleeping</option>
 									<option>Fainted</option>
 								</select>` + previews[i].innerHTML;
 		c[i] = completely(previews[i]);
